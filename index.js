@@ -1049,6 +1049,14 @@ var timezone=[
 var app = express();  
 var server = require('http').createServer(app);  
 app.use(express.static(__dirname + '/node_modules'));  
+
+
+app.get('/', function(req, res){
+  res.sendfile('tabel.html', { root: __dirname  } );
+});
+
+
+
 app.get('/notification', (req, res) =>
 {
   var mssg= req.param('messege');

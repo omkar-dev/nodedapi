@@ -1,0 +1,1156 @@
+
+
+
+
+<html lang="en" dir="ltr">
+    <head>
+      <meta charset="UTF-8">
+    <style>
+        
+        
+        table {
+            font-size: 100%;
+        }
+        
+        table.wikitable {
+            background-color: #f8f9fa;
+            color: #222;
+            margin: 1em 0;
+            border: 1px solid #a2a9b1;
+            border-collapse: collapse;
+        }
+        table {
+            display: table;
+            border-collapse: separate;
+            border-spacing: 2px;
+            border-color: grey;
+        }
+        .mw-content-ltr {
+            direction: ltr;
+        }
+        .mw-body-content {
+            position: relative;
+            line-height: 1.6;
+            font-size: 0.875em;
+        }
+        
+        
+        </style>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+
+
+        <div class="container">
+
+1.https://evening-savannah-79436.herokuapp.com
+   <br>
+
+
+<h4> Endpoint   :  /notification  </h4> 
+
+
+
+<h5  class="alert alert-primary" > Required Params  :  </h5> 
+<div class="alert alert-success">
+<p  >
+1) heading=""   (Title of Notification). <br>
+
+2) messege=""  (Notification Messege).<br>
+3) flag =""  one of any apps <br>
+
+<ul>
+
+        <li>IUEC </li>
+
+        <li>FOP</li>
+        <li>NFOP</li>
+</ul>
+
+
+
+EX = /notification?messege=hello&amp;heading=h1&amp;flag=IUEC
+
+
+
+</p>
+        </div>
+        
+
+<br>
+
+
+
+
+<h5  class="alert alert-primary" > Additional Params  :  </h5> 
+
+
+        <div class="alert alert-primary" >
+       <p>      
+          1) .  data=""   &nbsp;to pass Additonal Data to Show in App Popup <br>
+          <br>
+          Ex :http://localhost:5000/notification?messege=hello&amp;heading=h1&amp;flag=IUEC&amp;data=1121212</p> 
+          <br>
+        </div>
+
+       
+
+
+
+
+
+        <div class="alert alert-primary" >
+                <p>      
+                   1) . date =""   &nbsp;to send on specific date <br> 
+                   2) . time=""  &nbsp; to Send at Specific Time <br>  (IF Time is Not MEntioned It Will send At 9:00 am UTC)
+
+                   <br>
+                   3) . tz ="" Time zone In which To mentioned <br> if Not mentioned Will Set +00 , Follow Below Tabel For UTC
+                   <br>    <br>
+                   Ex :http://localhost:5000/notification?messege=hello&amp;heading=h1&amp;flag=IUEC&amp;data=1121212&amp;date=April 22 2018&amp;time=9:00:00 pm&amp;tz=IST1*ngFor="let item of stream | async as list"</p> 
+                   <br>
+                 </div>
+         
+                
+         
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+       
+        <div class="row">
+          <div class="col-3">
+   
+          </div>
+          <div class="col-6">
+
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="thead-dark"><tr>
+        <th scope="col" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Abbr.</th>
+    
+        <th  scope="col" style="text-align:left;" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Name</th>
+        <th  scope="col" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a href="/wiki/UTC" class="mw-redirect" title="UTC">UTC</a> offset</th>
+        </tr></thead><tbody>
+        <tr>
+        <td   >ACDT</td>
+        <td><a href="/wiki/Australian_Central_Daylight_Savings_Time" class="mw-redirect" title="Australian Central Daylight Savings Time">Australian Central Daylight Savings Time</a></td>
+        <td><a href="/wiki/UTC%2B10:30" title="UTC+10:30">UTC+10:30</a></td>
+        </tr>
+        <tr>
+        <td>ACST</td>
+        <td><a href="/wiki/Australian_Central_Standard_Time" class="mw-redirect" title="Australian Central Standard Time">Australian Central Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B09:30" title="UTC+09:30">UTC+09:30</a></td>
+        </tr>
+        <tr>
+        <td>ACT</td>
+        <td><a href="/wiki/Acre_Time" class="mw-redirect" title="Acre Time">Acre Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9205" class="mw-redirect" title="UTC−05">UTC−05</a></td>
+        </tr>
+        <tr>
+        <td>ACT</td>
+        <td><a href="/wiki/ASEAN_Common_Time" title="ASEAN Common Time">ASEAN Common Time</a></td>
+        <td><a href="/wiki/UTC%2B06:30" title="UTC+06:30">UTC+06:30</a> – <a href="/wiki/UTC%2B09" class="mw-redirect" title="UTC+09">UTC+09</a></td>
+        </tr>
+        <tr>
+        <td>ACWST</td>
+        <td><a href="/wiki/Australian_Central_Western_Standard_Time" class="mw-redirect" title="Australian Central Western Standard Time">Australian Central Western Standard Time</a> (unofficial)</td>
+        <td><a href="/wiki/UTC%2B08:45" title="UTC+08:45">UTC+08:45</a></td>
+        </tr>
+        <tr>
+        <td>ADT</td>
+        <td><a href="/wiki/Atlantic_Daylight_Time" class="mw-redirect" title="Atlantic Daylight Time">Atlantic Daylight Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9203" class="mw-redirect" title="UTC−03">UTC−03</a></td>
+        </tr>
+        <tr>
+        <td>AEDT</td>
+        <td><a href="/wiki/Australian_Eastern_Daylight_Savings_Time" class="mw-redirect" title="Australian Eastern Daylight Savings Time">Australian Eastern Daylight Savings Time</a></td>
+        <td><a href="/wiki/UTC%2B11" class="mw-redirect" title="UTC+11">UTC+11</a></td>
+        </tr>
+        <tr>
+        <td>AEST</td>
+        <td><a href="/wiki/Australian_Eastern_Standard_Time" class="mw-redirect" title="Australian Eastern Standard Time">Australian Eastern Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B10" class="mw-redirect" title="UTC+10">UTC+10</a></td>
+        </tr>
+        <tr>
+        <td>AFT</td>
+        <td><a href="/wiki/Afghanistan_Time" class="mw-redirect" title="Afghanistan Time">Afghanistan Time</a></td>
+        <td><a href="/wiki/UTC%2B04:30" title="UTC+04:30">UTC+04:30</a></td>
+        </tr>
+        <tr>
+        <td>AKDT</td>
+        <td><a href="/wiki/Alaska_Daylight_Time" class="mw-redirect" title="Alaska Daylight Time">Alaska Daylight Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9208" class="mw-redirect" title="UTC−08">UTC−08</a></td>
+        </tr>
+        <tr>
+        <td>AKST</td>
+        <td><a href="/wiki/Alaska_Standard_Time" class="mw-redirect" title="Alaska Standard Time">Alaska Standard Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9209" class="mw-redirect" title="UTC−09">UTC−09</a></td>
+        </tr>
+        <tr>
+        <td>AMST</td>
+        <td><a href="/wiki/Amazon_Summer_Time" class="mw-redirect" title="Amazon Summer Time">Amazon Summer Time</a> (<a href="/wiki/Brazil" title="Brazil">Brazil</a>)<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></td>
+        <td><a href="/wiki/UTC%E2%88%9203" class="mw-redirect" title="UTC−03">UTC−03</a></td>
+        </tr>
+        <tr>
+        <td>AMT</td>
+        <td><a href="/wiki/Amazon_Time" class="mw-redirect" title="Amazon Time">Amazon Time</a> (<a href="/wiki/Brazil" title="Brazil">Brazil</a>)<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></td>
+        <td><a href="/wiki/UTC%E2%88%9204" class="mw-redirect" title="UTC−04">UTC−04</a></td>
+        </tr>
+        <tr>
+        <td>AMT</td>
+        <td><a href="/wiki/Armenia_Time" title="Armenia Time">Armenia Time</a></td>
+        <td><a href="/wiki/UTC%2B04" class="mw-redirect" title="UTC+04">UTC+04</a></td>
+        </tr>
+        <tr>
+        <td>ART</td>
+        <td><a href="/wiki/Argentina_Time" class="mw-redirect" title="Argentina Time">Argentina Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9203" class="mw-redirect" title="UTC−03">UTC−03</a></td>
+        </tr>
+        <tr>
+        <td>AST</td>
+        <td><a href="/wiki/Arabia_Standard_Time" class="mw-redirect" title="Arabia Standard Time">Arabia Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B03" class="mw-redirect" title="UTC+03">UTC+03</a></td>
+        </tr>
+        <tr>
+        <td>AST</td>
+        <td><a href="/wiki/Atlantic_Standard_Time" class="mw-redirect" title="Atlantic Standard Time">Atlantic Standard Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9204" class="mw-redirect" title="UTC−04">UTC−04</a></td>
+        </tr>
+        <tr>
+        <td>AWST</td>
+        <td><a href="/wiki/Australian_Western_Standard_Time" class="mw-redirect" title="Australian Western Standard Time">Australian Western Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>AZOST</td>
+        <td><a href="/w/index.php?title=Azores_Summer_Time&amp;action=edit&amp;redlink=1" class="new" title="Azores Summer Time (page does not exist)">Azores Summer Time</a></td>
+        <td><a href="/wiki/UTC%C2%B100:00" title="UTC±00:00">UTC±00</a></td>
+        </tr>
+        <tr>
+        <td>AZOT</td>
+        <td><a href="/w/index.php?title=Azores_Standard_Time&amp;action=edit&amp;redlink=1" class="new" title="Azores Standard Time (page does not exist)">Azores Standard Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9201" class="mw-redirect" title="UTC−01">UTC−01</a></td>
+        </tr>
+        <tr>
+        <td>AZT</td>
+        <td><a href="/wiki/Azerbaijan_Time" class="mw-redirect" title="Azerbaijan Time">Azerbaijan Time</a></td>
+        <td><a href="/wiki/UTC%2B04" class="mw-redirect" title="UTC+04">UTC+04</a></td>
+        </tr>
+        <tr>
+        <td>BDT</td>
+        <td><a href="/wiki/Brunei_Time" class="mw-redirect" title="Brunei Time">Brunei Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>BIOT</td>
+        <td><a href="/wiki/British_Indian_Ocean_Time" class="mw-redirect" title="British Indian Ocean Time">British Indian Ocean Time</a></td>
+        <td><a href="/wiki/UTC%2B06" class="mw-redirect" title="UTC+06">UTC+06</a></td>
+        </tr>
+        <tr>
+        <td>BIT</td>
+        <td><a href="/wiki/Baker_Island_Time" class="mw-redirect" title="Baker Island Time">Baker Island Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9212" class="mw-redirect" title="UTC−12">UTC−12</a></td>
+        </tr>
+        <tr>
+        <td>BOT</td>
+        <td><a href="/wiki/Bolivia_Time" class="mw-redirect" title="Bolivia Time">Bolivia Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9204" class="mw-redirect" title="UTC−04">UTC−04</a></td>
+        </tr>
+        <tr>
+        <td>BRST</td>
+        <td><a href="/wiki/Bras%C3%ADlia_Summer_Time" class="mw-redirect" title="Brasília Summer Time">Brasília Summer Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9202" class="mw-redirect" title="UTC−02">UTC−02</a></td>
+        </tr>
+        <tr>
+        <td>BRT</td>
+        <td><a href="/wiki/Brasilia_Time" class="mw-redirect" title="Brasilia Time">Brasilia Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9203" class="mw-redirect" title="UTC−03">UTC−03</a></td>
+        </tr>
+        <tr>
+        <td>BST</td>
+        <td><a href="/wiki/Bangladesh_Standard_Time" title="Bangladesh Standard Time">Bangladesh Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B06" class="mw-redirect" title="UTC+06">UTC+06</a></td>
+        </tr>
+        <tr>
+        <td>BST</td>
+        <td><a href="/wiki/Bougainville_Standard_Time" class="mw-redirect" title="Bougainville Standard Time">Bougainville Standard Time</a><sup id="cite_ref-tdbougainville_3-0" class="reference"><a href="#cite_note-tdbougainville-3">[3]</a></sup></td>
+        <td><a href="/wiki/UTC%2B11" class="mw-redirect" title="UTC+11">UTC+11</a></td>
+        </tr>
+        <tr>
+        <td>BST</td>
+        <td><a href="/wiki/British_Summer_Time" title="British Summer Time">British Summer Time</a> (<a href="/wiki/British_Standard_Time" class="mw-redirect" title="British Standard Time">British Standard Time</a> from Feb 1968 to Oct 1971)</td>
+        <td><a href="/wiki/UTC%2B01" class="mw-redirect" title="UTC+01">UTC+01</a></td>
+        </tr>
+        <tr>
+        <td>BTT</td>
+        <td><a href="/wiki/Bhutan_Time" title="Bhutan Time">Bhutan Time</a></td>
+        <td><a href="/wiki/UTC%2B06" class="mw-redirect" title="UTC+06">UTC+06</a></td>
+        </tr>
+        <tr>
+        <td>CAT</td>
+        <td><a href="/wiki/Central_Africa_Time" title="Central Africa Time">Central Africa Time</a></td>
+        <td><a href="/wiki/UTC%2B02" class="mw-redirect" title="UTC+02">UTC+02</a></td>
+        </tr>
+        <tr>
+        <td>CCT</td>
+        <td><a href="/wiki/Cocos_Islands_Time" class="mw-redirect" title="Cocos Islands Time">Cocos Islands Time</a></td>
+        <td><a href="/wiki/UTC%2B06:30" title="UTC+06:30">UTC+06:30</a></td>
+        </tr>
+        <tr>
+        <td>CDT</td>
+        <td><a href="/wiki/Central_Daylight_Time" class="mw-redirect" title="Central Daylight Time">Central Daylight Time</a> (North America)</td>
+        <td><a href="/wiki/UTC%E2%88%9205" class="mw-redirect" title="UTC−05">UTC−05</a></td>
+        </tr>
+        <tr>
+        <td>CDT</td>
+        <td><a href="/wiki/Cuba_Daylight_Time" class="mw-redirect" title="Cuba Daylight Time">Cuba Daylight Time</a><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></td>
+        <td><a href="/wiki/UTC%E2%88%9204" class="mw-redirect" title="UTC−04">UTC−04</a></td>
+        </tr>
+        <tr>
+        <td>CEST</td>
+        <td><a href="/wiki/Central_European_Summer_Time" title="Central European Summer Time">Central European Summer Time</a> (Cf. HAEC)</td>
+        <td><a href="/wiki/UTC%2B02" class="mw-redirect" title="UTC+02">UTC+02</a></td>
+        </tr>
+        <tr>
+        <td>CET</td>
+        <td><a href="/wiki/Central_European_Time" title="Central European Time">Central European Time</a></td>
+        <td><a href="/wiki/UTC%2B01" class="mw-redirect" title="UTC+01">UTC+01</a></td>
+        </tr>
+        <tr>
+        <td>CHADT</td>
+        <td><a href="/wiki/Chatham_Daylight_Time" class="mw-redirect" title="Chatham Daylight Time">Chatham Daylight Time</a></td>
+        <td><a href="/wiki/UTC%2B13:45" title="UTC+13:45">UTC+13:45</a></td>
+        </tr>
+        <tr>
+        <td>CHAST</td>
+        <td><a href="/wiki/Chatham_Standard_Time" class="mw-redirect" title="Chatham Standard Time">Chatham Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B12:45" title="UTC+12:45">UTC+12:45</a></td>
+        </tr>
+        <tr>
+        <td>CHOT</td>
+        <td><a href="/wiki/Choibalsan_Standard_Time" class="mw-redirect" title="Choibalsan Standard Time">Choibalsan Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>CHOST</td>
+        <td><a href="/wiki/Choibalsan_Summer_Time" class="mw-redirect" title="Choibalsan Summer Time">Choibalsan Summer Time</a></td>
+        <td><a href="/wiki/UTC%2B09" class="mw-redirect" title="UTC+09">UTC+09</a></td>
+        </tr>
+        <tr>
+        <td>CHST</td>
+        <td><a href="/wiki/Chamorro_Standard_Time" class="mw-redirect" title="Chamorro Standard Time">Chamorro Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B10" class="mw-redirect" title="UTC+10">UTC+10</a></td>
+        </tr>
+        <tr>
+        <td>CHUT</td>
+        <td><a href="/wiki/Chuuk_Time" class="mw-redirect" title="Chuuk Time">Chuuk Time</a></td>
+        <td><a href="/wiki/UTC%2B10" class="mw-redirect" title="UTC+10">UTC+10</a></td>
+        </tr>
+        <tr>
+        <td>CIST</td>
+        <td><a href="/wiki/Clipperton_Island_Standard_Time" class="mw-redirect" title="Clipperton Island Standard Time">Clipperton Island Standard Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9208" class="mw-redirect" title="UTC−08">UTC−08</a></td>
+        </tr>
+        <tr>
+        <td>CIT</td>
+        <td><a href="/wiki/Central_Indonesia_Time" class="mw-redirect" title="Central Indonesia Time">Central Indonesia Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>CKT</td>
+        <td><a href="/wiki/Cook_Island_Time" class="mw-redirect" title="Cook Island Time">Cook Island Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9210" class="mw-redirect" title="UTC−10">UTC−10</a></td>
+        </tr>
+        <tr>
+        <td>CLST</td>
+        <td><a href="/wiki/Chile_Summer_Time" class="mw-redirect" title="Chile Summer Time">Chile Summer Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9203" class="mw-redirect" title="UTC−03">UTC−03</a></td>
+        </tr>
+        <tr>
+        <td>CLT</td>
+        <td><a href="/wiki/Chile_Standard_Time" class="mw-redirect" title="Chile Standard Time">Chile Standard Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9204" class="mw-redirect" title="UTC−04">UTC−04</a></td>
+        </tr>
+        <tr>
+        <td>COST</td>
+        <td><a href="/wiki/Colombia_Summer_Time" class="mw-redirect" title="Colombia Summer Time">Colombia Summer Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9204" class="mw-redirect" title="UTC−04">UTC−04</a></td>
+        </tr>
+        <tr>
+        <td>COT</td>
+        <td><a href="/wiki/Colombia_Time" class="mw-redirect" title="Colombia Time">Colombia Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9205" class="mw-redirect" title="UTC−05">UTC−05</a></td>
+        </tr>
+        <tr>
+        <td>CST</td>
+        <td><a href="/wiki/Central_Standard_Time" class="mw-redirect" title="Central Standard Time">Central Standard Time</a> (North America)</td>
+        <td><a href="/wiki/UTC%E2%88%9206" class="mw-redirect" title="UTC−06">UTC−06</a></td>
+        </tr>
+        <tr>
+        <td>CST</td>
+        <td><a href="/wiki/China_Standard_Time" class="mw-redirect" title="China Standard Time">China Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>CST</td>
+        <td><a href="/wiki/Cuba_Standard_Time" class="mw-redirect" title="Cuba Standard Time">Cuba Standard Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9205" class="mw-redirect" title="UTC−05">UTC−05</a></td>
+        </tr>
+        <tr>
+        <td>CT</td>
+        <td><a href="/w/index.php?title=China_Time&amp;action=edit&amp;redlink=1" class="new" title="China Time (page does not exist)">China Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>CVT</td>
+        <td><a href="/wiki/Cape_Verde_Time" title="Cape Verde Time">Cape Verde Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9201" class="mw-redirect" title="UTC−01">UTC−01</a></td>
+        </tr>
+        <tr>
+        <td>CWST</td>
+        <td><a href="/wiki/Central_Western_Standard_Time" class="mw-redirect" title="Central Western Standard Time">Central Western Standard Time</a> (Australia) unofficial</td>
+        <td><a href="/wiki/UTC%2B08:45" title="UTC+08:45">UTC+08:45</a></td>
+        </tr>
+        <tr>
+        <td>CXT</td>
+        <td><a href="/wiki/Christmas_Island_Time" class="mw-redirect" title="Christmas Island Time">Christmas Island Time</a></td>
+        <td><a href="/wiki/UTC%2B07" class="mw-redirect" title="UTC+07">UTC+07</a></td>
+        </tr>
+        <tr>
+        <td>DAVT</td>
+        <td><a href="/wiki/Davis_Time" class="mw-redirect" title="Davis Time">Davis Time</a></td>
+        <td><a href="/wiki/UTC%2B07" class="mw-redirect" title="UTC+07">UTC+07</a></td>
+        </tr>
+        <tr>
+        <td>DDUT</td>
+        <td><a href="/w/index.php?title=Dumont_d%27Urville_Time&amp;action=edit&amp;redlink=1" class="new" title="Dumont d'Urville Time (page does not exist)">Dumont d'Urville Time</a></td>
+        <td><a href="/wiki/UTC%2B10" class="mw-redirect" title="UTC+10">UTC+10</a></td>
+        </tr>
+        <tr>
+        <td>DFT</td>
+        <td>AIX-specific equivalent of <a href="/wiki/Central_European_Time" title="Central European Time">Central European Time</a><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[NB 1]</a></sup></td>
+        <td><a href="/wiki/UTC%2B01" class="mw-redirect" title="UTC+01">UTC+01</a></td>
+        </tr>
+        <tr>
+        <td>EASST</td>
+        <td><a href="/wiki/Easter_Island_Summer_Time" class="mw-redirect" title="Easter Island Summer Time">Easter Island Summer Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9205" class="mw-redirect" title="UTC−05">UTC−05</a></td>
+        </tr>
+        <tr>
+        <td>EAST</td>
+        <td><a href="/wiki/Easter_Island_Standard_Time" class="mw-redirect" title="Easter Island Standard Time">Easter Island Standard Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9206" class="mw-redirect" title="UTC−06">UTC−06</a></td>
+        </tr>
+        <tr>
+        <td>EAT</td>
+        <td><a href="/wiki/East_Africa_Time" title="East Africa Time">East Africa Time</a></td>
+        <td><a href="/wiki/UTC%2B03" class="mw-redirect" title="UTC+03">UTC+03</a></td>
+        </tr>
+        <tr>
+        <td>ECT</td>
+        <td><a href="/wiki/Eastern_Caribbean_Time" class="mw-redirect" title="Eastern Caribbean Time">Eastern Caribbean Time</a> (does not recognise DST)</td>
+        <td><a href="/wiki/UTC%E2%88%9204" class="mw-redirect" title="UTC−04">UTC−04</a></td>
+        </tr>
+        <tr>
+        <td>ECT</td>
+        <td><a href="/wiki/Ecuador_Time" class="mw-redirect" title="Ecuador Time">Ecuador Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9205" class="mw-redirect" title="UTC−05">UTC−05</a></td>
+        </tr>
+        <tr>
+        <td>EDT</td>
+        <td><a href="/wiki/Eastern_Daylight_Time" class="mw-redirect" title="Eastern Daylight Time">Eastern Daylight Time</a> (North America)</td>
+        <td><a href="/wiki/UTC%E2%88%9204" class="mw-redirect" title="UTC−04">UTC−04</a></td>
+        </tr>
+        <tr>
+        <td>EEST</td>
+        <td><a href="/wiki/Eastern_European_Summer_Time" title="Eastern European Summer Time">Eastern European Summer Time</a></td>
+        <td><a href="/wiki/UTC%2B03" class="mw-redirect" title="UTC+03">UTC+03</a></td>
+        </tr>
+        <tr>
+        <td>EET</td>
+        <td><a href="/wiki/Eastern_European_Time" title="Eastern European Time">Eastern European Time</a></td>
+        <td><a href="/wiki/UTC%2B02" class="mw-redirect" title="UTC+02">UTC+02</a></td>
+        </tr>
+        <tr>
+        <td>EGST</td>
+        <td><a href="/wiki/Eastern_Greenland_Summer_Time" class="mw-redirect" title="Eastern Greenland Summer Time">Eastern Greenland Summer Time</a></td>
+        <td><a href="/wiki/UTC%C2%B100:00" title="UTC±00:00">UTC±00</a></td>
+        </tr>
+        <tr>
+        <td>EGT</td>
+        <td><a href="/wiki/Eastern_Greenland_Time" class="mw-redirect" title="Eastern Greenland Time">Eastern Greenland Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9201" class="mw-redirect" title="UTC−01">UTC−01</a></td>
+        </tr>
+        <tr>
+        <td>EIT</td>
+        <td><a href="/wiki/Eastern_Indonesian_Time" class="mw-redirect" title="Eastern Indonesian Time">Eastern Indonesian Time</a></td>
+        <td><a href="/wiki/UTC%2B09" class="mw-redirect" title="UTC+09">UTC+09</a></td>
+        </tr>
+        <tr>
+        <td>EST</td>
+        <td><a href="/wiki/Eastern_Standard_Time_(North_America)" class="mw-redirect" title="Eastern Standard Time (North America)">Eastern Standard Time (North America)</a></td>
+        <td><a href="/wiki/UTC%E2%88%9205" class="mw-redirect" title="UTC−05">UTC−05</a></td>
+        </tr>
+        <tr>
+        <td>FET</td>
+        <td><a href="/wiki/Further-eastern_European_Time" title="Further-eastern European Time">Further-eastern European Time</a></td>
+        <td><a href="/wiki/UTC%2B03" class="mw-redirect" title="UTC+03">UTC+03</a></td>
+        </tr>
+        <tr>
+        <td>FJT</td>
+        <td><a href="/wiki/Fiji_Time" class="mw-redirect" title="Fiji Time">Fiji Time</a></td>
+        <td><a href="/wiki/UTC%2B12" class="mw-redirect" title="UTC+12">UTC+12</a></td>
+        </tr>
+        <tr>
+        <td>FKST</td>
+        <td><a href="/wiki/Falkland_Islands_Summer_Time" class="mw-redirect" title="Falkland Islands Summer Time">Falkland Islands Summer Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9203" class="mw-redirect" title="UTC−03">UTC−03</a></td>
+        </tr>
+        <tr>
+        <td>FKT</td>
+        <td><a href="/wiki/Falkland_Islands_Time" class="mw-redirect" title="Falkland Islands Time">Falkland Islands Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9204" class="mw-redirect" title="UTC−04">UTC−04</a></td>
+        </tr>
+        <tr>
+        <td>FNT</td>
+        <td><a href="/wiki/Fernando_de_Noronha_Time" class="mw-redirect" title="Fernando de Noronha Time">Fernando de Noronha Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9202" class="mw-redirect" title="UTC−02">UTC−02</a></td>
+        </tr>
+        <tr>
+        <td>GALT</td>
+        <td><a href="/wiki/Gal%C3%A1pagos_Time" title="Galápagos Time">Galápagos Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9206" class="mw-redirect" title="UTC−06">UTC−06</a></td>
+        </tr>
+        <tr>
+        <td>GAMT</td>
+        <td><a href="/wiki/Gambier_Islands_Time" class="mw-redirect" title="Gambier Islands Time">Gambier Islands Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9209" class="mw-redirect" title="UTC−09">UTC−09</a></td>
+        </tr>
+        <tr>
+        <td>GET</td>
+        <td><a href="/wiki/Georgia_Standard_Time" class="mw-redirect" title="Georgia Standard Time">Georgia Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B04" class="mw-redirect" title="UTC+04">UTC+04</a></td>
+        </tr>
+        <tr>
+        <td>GFT</td>
+        <td><a href="/wiki/French_Guiana_Time" class="mw-redirect" title="French Guiana Time">French Guiana Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9203" class="mw-redirect" title="UTC−03">UTC−03</a></td>
+        </tr>
+        <tr>
+        <td>GILT</td>
+        <td><a href="/wiki/Gilbert_Island_Time" class="mw-redirect" title="Gilbert Island Time">Gilbert Island Time</a></td>
+        <td><a href="/wiki/UTC%2B12" class="mw-redirect" title="UTC+12">UTC+12</a></td>
+        </tr>
+        <tr>
+        <td>GIT</td>
+        <td><a href="/wiki/Gambier_Island_Time" class="mw-redirect" title="Gambier Island Time">Gambier Island Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9209" class="mw-redirect" title="UTC−09">UTC−09</a></td>
+        </tr>
+        <tr>
+        <td>GMT</td>
+        <td><a href="/wiki/Greenwich_Mean_Time" title="Greenwich Mean Time">Greenwich Mean Time</a></td>
+        <td><a href="/wiki/UTC%C2%B100:00" title="UTC±00:00">UTC±00</a></td>
+        </tr>
+        <tr>
+        <td>GST</td>
+        <td><a href="/wiki/South_Georgia_and_the_South_Sandwich_Islands_Time" class="mw-redirect" title="South Georgia and the South Sandwich Islands Time">South Georgia and the South Sandwich Islands Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9202" class="mw-redirect" title="UTC−02">UTC−02</a></td>
+        </tr>
+        <tr>
+        <td>GST</td>
+        <td><a href="/wiki/Gulf_Standard_Time" class="mw-redirect" title="Gulf Standard Time">Gulf Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B04" class="mw-redirect" title="UTC+04">UTC+04</a></td>
+        </tr>
+        <tr>
+        <td>GYT</td>
+        <td><a href="/wiki/Guyana_Time" class="mw-redirect" title="Guyana Time">Guyana Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9204" class="mw-redirect" title="UTC−04">UTC−04</a></td>
+        </tr>
+        <tr>
+        <td>HDT</td>
+        <td><a href="/wiki/Hawaii%E2%80%93Aleutian_Daylight_Time" class="mw-redirect" title="Hawaii–Aleutian Daylight Time">Hawaii–Aleutian Daylight Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9209" class="mw-redirect" title="UTC−09">UTC−09</a></td>
+        </tr>
+        <tr>
+        <td>HAEC</td>
+        <td><a href="/wiki/Heure_Avanc%C3%A9e_d%27Europe_Centrale" class="mw-redirect" title="Heure Avancée d'Europe Centrale">Heure Avancée d'Europe Centrale</a> French-language name for CEST</td>
+        <td><a href="/wiki/UTC%2B02" class="mw-redirect" title="UTC+02">UTC+02</a></td>
+        </tr>
+        <tr>
+        <td>HST</td>
+        <td><a href="/wiki/Hawaii%E2%80%93Aleutian_Standard_Time" class="mw-redirect" title="Hawaii–Aleutian Standard Time">Hawaii–Aleutian Standard Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9210" class="mw-redirect" title="UTC−10">UTC−10</a></td>
+        </tr>
+        <tr>
+        <td>HKT</td>
+        <td><a href="/wiki/Hong_Kong_Time" title="Hong Kong Time">Hong Kong Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>HMT</td>
+        <td><a href="/wiki/Heard_and_McDonald_Islands" class="mw-redirect" title="Heard and McDonald Islands">Heard and McDonald Islands</a> Time</td>
+        <td><a href="/wiki/UTC%2B05" class="mw-redirect" title="UTC+05">UTC+05</a></td>
+        </tr>
+        <tr>
+        <td>HOVST</td>
+        <td><a href="/w/index.php?title=Khovd_Summer_Time&amp;action=edit&amp;redlink=1" class="new" title="Khovd Summer Time (page does not exist)">Khovd Summer Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>HOVT</td>
+        <td><a href="/w/index.php?title=Khovd_Standard_Time&amp;action=edit&amp;redlink=1" class="new" title="Khovd Standard Time (page does not exist)">Khovd Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B07" class="mw-redirect" title="UTC+07">UTC+07</a></td>
+        </tr>
+        <tr>
+        <td>ICT</td>
+        <td><a href="/wiki/Indochina_Time" class="mw-redirect" title="Indochina Time">Indochina Time</a></td>
+        <td><a href="/wiki/UTC%2B07" class="mw-redirect" title="UTC+07">UTC+07</a></td>
+        </tr>
+        <tr>
+        <td>IDLW</td>
+        <td><a href="/wiki/UTC-12" class="mw-redirect" title="UTC-12">International Day Line West time zone</a></td>
+        <td><a href="/wiki/UTC-12" class="mw-redirect" title="UTC-12">UTC-12</a></td>
+        </tr>
+        <tr>
+        <td>IDT</td>
+        <td><a href="/wiki/Israel_Daylight_Time" class="mw-redirect" title="Israel Daylight Time">Israel Daylight Time</a></td>
+        <td><a href="/wiki/UTC%2B03" class="mw-redirect" title="UTC+03">UTC+03</a></td>
+        </tr>
+        <tr>
+        <td>IOT</td>
+        <td><a href="/wiki/Chagos_Archipelago" title="Chagos Archipelago">Indian Ocean Time</a></td>
+        <td><a href="/wiki/UTC%2B03" class="mw-redirect" title="UTC+03">UTC+03</a></td>
+        </tr>
+        <tr>
+        <td>IRDT</td>
+        <td><a href="/wiki/Iran_Daylight_Time" class="mw-redirect" title="Iran Daylight Time">Iran Daylight Time</a></td>
+        <td><a href="/wiki/UTC%2B04:30" title="UTC+04:30">UTC+04:30</a></td>
+        </tr>
+        <tr>
+        <td>IRKT</td>
+        <td><a href="/wiki/Irkutsk_Time" title="Irkutsk Time">Irkutsk Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>IRST</td>
+        <td><a href="/wiki/Iran_Standard_Time" title="Iran Standard Time">Iran Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B03:30" title="UTC+03:30">UTC+03:30</a></td>
+        </tr>
+        <tr>
+        <td>IST1</td>
+        <td><a href="/wiki/Indian_Standard_Time" title="Indian Standard Time">Indian Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B05:30" title="UTC+05:30">UTC+05:30</a></td>
+        </tr>
+        <tr>
+        <td>IST2</td>
+        <td><a href="/wiki/Irish_Standard_Time" class="mw-redirect" title="Irish Standard Time">Irish Standard Time</a><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[5]</a></sup></td>
+        <td><a href="/wiki/UTC%2B01" class="mw-redirect" title="UTC+01">UTC+01</a></td>
+        </tr>
+        <tr>
+        <td>IST3</td>
+        <td><a href="/wiki/Israel_Standard_Time" title="Israel Standard Time">Israel Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B02" class="mw-redirect" title="UTC+02">UTC+02</a></td>
+        </tr>
+        <tr>
+        <td>JST</td>
+        <td><a href="/wiki/Japan_Standard_Time" title="Japan Standard Time">Japan Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B09" class="mw-redirect" title="UTC+09">UTC+09</a></td>
+        </tr>
+        <tr>
+        <td>KGT</td>
+        <td><a href="/wiki/Kyrgyzstan_Time" title="Kyrgyzstan Time">Kyrgyzstan Time</a></td>
+        <td><a href="/wiki/UTC%2B06" class="mw-redirect" title="UTC+06">UTC+06</a></td>
+        </tr>
+        <tr>
+        <td>KOST</td>
+        <td><a href="/wiki/Kosrae_Time" class="mw-redirect" title="Kosrae Time">Kosrae Time</a></td>
+        <td><a href="/wiki/UTC%2B11" class="mw-redirect" title="UTC+11">UTC+11</a></td>
+        </tr>
+        <tr>
+        <td>KRAT</td>
+        <td><a href="/wiki/Krasnoyarsk_Time" title="Krasnoyarsk Time">Krasnoyarsk Time</a></td>
+        <td><a href="/wiki/UTC%2B07" class="mw-redirect" title="UTC+07">UTC+07</a></td>
+        </tr>
+        <tr>
+        <td>KST</td>
+        <td><a href="/wiki/Korea_Standard_Time" class="mw-redirect" title="Korea Standard Time">Korea Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B09" class="mw-redirect" title="UTC+09">UTC+09</a></td>
+        </tr>
+        <tr>
+        <td>LHST</td>
+        <td><a href="/w/index.php?title=Lord_Howe_Standard_Time&amp;action=edit&amp;redlink=1" class="new" title="Lord Howe Standard Time (page does not exist)">Lord Howe Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B10:30" title="UTC+10:30">UTC+10:30</a></td>
+        </tr>
+        <tr>
+        <td>LHST</td>
+        <td><a href="/w/index.php?title=Lord_Howe_Summer_Time&amp;action=edit&amp;redlink=1" class="new" title="Lord Howe Summer Time (page does not exist)">Lord Howe Summer Time</a></td>
+        <td><a href="/wiki/UTC%2B11" class="mw-redirect" title="UTC+11">UTC+11</a></td>
+        </tr>
+        <tr>
+        <td>LINT</td>
+        <td><a href="/wiki/Line_Islands" title="Line Islands">Line Islands</a> Time</td>
+        <td><a href="/wiki/UTC%2B14" class="mw-redirect" title="UTC+14">UTC+14</a></td>
+        </tr>
+        <tr>
+        <td>MAGT</td>
+        <td><a href="/wiki/Magadan_Time" title="Magadan Time">Magadan Time</a></td>
+        <td><a href="/wiki/UTC%2B12" class="mw-redirect" title="UTC+12">UTC+12</a></td>
+        </tr>
+        <tr>
+        <td>MART</td>
+        <td><a href="/wiki/Marquesas_Islands_Time" class="mw-redirect" title="Marquesas Islands Time">Marquesas Islands Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9209:30" title="UTC−09:30">UTC−09:30</a></td>
+        </tr>
+        <tr>
+        <td>MAWT</td>
+        <td><a href="/w/index.php?title=Mawson_Station_Time&amp;action=edit&amp;redlink=1" class="new" title="Mawson Station Time (page does not exist)">Mawson Station Time</a></td>
+        <td><a href="/wiki/UTC%2B05" class="mw-redirect" title="UTC+05">UTC+05</a></td>
+        </tr>
+        <tr>
+        <td>MDT</td>
+        <td><a href="/wiki/Mountain_Daylight_Time" class="mw-redirect" title="Mountain Daylight Time">Mountain Daylight Time</a> (North America)</td>
+        <td><a href="/wiki/UTC%E2%88%9206" class="mw-redirect" title="UTC−06">UTC−06</a></td>
+        </tr>
+        <tr>
+        <td>MET</td>
+        <td><a href="/wiki/Middle_European_Time" class="mw-redirect" title="Middle European Time">Middle European Time</a> Same zone as CET</td>
+        <td><a href="/wiki/UTC%2B01" class="mw-redirect" title="UTC+01">UTC+01</a></td>
+        </tr>
+        <tr>
+        <td>MEST</td>
+        <td><a href="/wiki/Middle_European_Summer_Time" class="mw-redirect" title="Middle European Summer Time">Middle European Summer Time</a> Same zone as CEST</td>
+        <td><a href="/wiki/UTC%2B02" class="mw-redirect" title="UTC+02">UTC+02</a></td>
+        </tr>
+        <tr>
+        <td>MHT</td>
+        <td><a href="/wiki/Marshall_Islands_Time" class="mw-redirect" title="Marshall Islands Time">Marshall Islands Time</a></td>
+        <td><a href="/wiki/UTC%2B12" class="mw-redirect" title="UTC+12">UTC+12</a></td>
+        </tr>
+        <tr>
+        <td>MIST</td>
+        <td><a href="/w/index.php?title=Macquarie_Island_Station_Time&amp;action=edit&amp;redlink=1" class="new" title="Macquarie Island Station Time (page does not exist)">Macquarie Island Station Time</a></td>
+        <td><a href="/wiki/UTC%2B11" class="mw-redirect" title="UTC+11">UTC+11</a></td>
+        </tr>
+        <tr>
+        <td>MIT</td>
+        <td><a href="/wiki/Marquesas_Islands_Time" class="mw-redirect" title="Marquesas Islands Time">Marquesas Islands Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9209:30" title="UTC−09:30">UTC−09:30</a></td>
+        </tr>
+        <tr>
+        <td>MMT</td>
+        <td><a href="/wiki/Myanmar_Standard_Time" title="Myanmar Standard Time">Myanmar Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B06:30" title="UTC+06:30">UTC+06:30</a></td>
+        </tr>
+        <tr>
+        <td>MSK</td>
+        <td><a href="/wiki/Moscow_Time" title="Moscow Time">Moscow Time</a></td>
+        <td><a href="/wiki/UTC%2B03" class="mw-redirect" title="UTC+03">UTC+03</a></td>
+        </tr>
+        <tr>
+        <td>MST</td>
+        <td><a href="/wiki/Malaysia_Standard_Time" class="mw-redirect" title="Malaysia Standard Time">Malaysia Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>MST</td>
+        <td><a href="/wiki/Mountain_Standard_Time" class="mw-redirect" title="Mountain Standard Time">Mountain Standard Time</a> (North America)</td>
+        <td><a href="/wiki/UTC%E2%88%9207" class="mw-redirect" title="UTC−07">UTC−07</a></td>
+        </tr>
+        <tr>
+        <td>MUT</td>
+        <td><a href="/wiki/Mauritius_Time" title="Mauritius Time">Mauritius Time</a></td>
+        <td><a href="/wiki/UTC%2B04" class="mw-redirect" title="UTC+04">UTC+04</a></td>
+        </tr>
+        <tr>
+        <td>MVT</td>
+        <td><a href="/wiki/Maldives_Time" class="mw-redirect" title="Maldives Time">Maldives Time</a></td>
+        <td><a href="/wiki/UTC%2B05" class="mw-redirect" title="UTC+05">UTC+05</a></td>
+        </tr>
+        <tr>
+        <td>MYT</td>
+        <td><a href="/wiki/Malaysia_Time" class="mw-redirect" title="Malaysia Time">Malaysia Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>NCT</td>
+        <td><a href="/wiki/New_Caledonia_Time" class="mw-redirect" title="New Caledonia Time">New Caledonia Time</a></td>
+        <td><a href="/wiki/UTC%2B11" class="mw-redirect" title="UTC+11">UTC+11</a></td>
+        </tr>
+        <tr>
+        <td>NDT</td>
+        <td><a href="/wiki/Newfoundland_Daylight_Time" class="mw-redirect" title="Newfoundland Daylight Time">Newfoundland Daylight Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9202:30" title="UTC−02:30">UTC−02:30</a></td>
+        </tr>
+        <tr>
+        <td>NFT</td>
+        <td><a href="/wiki/Norfolk_Island_Time" class="mw-redirect" title="Norfolk Island Time">Norfolk Island Time</a></td>
+        <td><a href="/wiki/UTC%2B11" class="mw-redirect" title="UTC+11">UTC+11</a></td>
+        </tr>
+        <tr>
+        <td>NPT</td>
+        <td><a href="/wiki/Nepal_Time" class="mw-redirect" title="Nepal Time">Nepal Time</a></td>
+        <td><a href="/wiki/UTC%2B05:45" title="UTC+05:45">UTC+05:45</a></td>
+        </tr>
+        <tr>
+        <td>NST</td>
+        <td><a href="/wiki/Newfoundland_Standard_Time" class="mw-redirect" title="Newfoundland Standard Time">Newfoundland Standard Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9203:30" title="UTC−03:30">UTC−03:30</a></td>
+        </tr>
+        <tr>
+        <td>NT</td>
+        <td><a href="/wiki/Newfoundland_Time" class="mw-redirect" title="Newfoundland Time">Newfoundland Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9203:30" title="UTC−03:30">UTC−03:30</a></td>
+        </tr>
+        <tr>
+        <td>NUT</td>
+        <td><a href="/wiki/Niue_Time" class="mw-redirect" title="Niue Time">Niue Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9211" class="mw-redirect" title="UTC−11">UTC−11</a></td>
+        </tr>
+        <tr>
+        <td>NZDT</td>
+        <td><a href="/wiki/New_Zealand_Daylight_Time" class="mw-redirect" title="New Zealand Daylight Time">New Zealand Daylight Time</a></td>
+        <td><a href="/wiki/UTC%2B13" class="mw-redirect" title="UTC+13">UTC+13</a></td>
+        </tr>
+        <tr>
+        <td>NZST</td>
+        <td><a href="/wiki/New_Zealand_Standard_Time" class="mw-redirect" title="New Zealand Standard Time">New Zealand Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B12" class="mw-redirect" title="UTC+12">UTC+12</a></td>
+        </tr>
+        <tr>
+        <td>OMST</td>
+        <td><a href="/wiki/Omsk_Time" title="Omsk Time">Omsk Time</a></td>
+        <td><a href="/wiki/UTC%2B06" class="mw-redirect" title="UTC+06">UTC+06</a></td>
+        </tr>
+        <tr>
+        <td>ORAT</td>
+        <td><a href="/w/index.php?title=Oral_Time&amp;action=edit&amp;redlink=1" class="new" title="Oral Time (page does not exist)">Oral Time</a></td>
+        <td><a href="/wiki/UTC%2B05" class="mw-redirect" title="UTC+05">UTC+05</a></td>
+        </tr>
+        <tr>
+        <td>PDT</td>
+        <td><a href="/wiki/Pacific_Daylight_Time" class="mw-redirect" title="Pacific Daylight Time">Pacific Daylight Time</a> (North America)</td>
+        <td><a href="/wiki/UTC%E2%88%9207" class="mw-redirect" title="UTC−07">UTC−07</a></td>
+        </tr>
+        <tr>
+        <td>PET</td>
+        <td><a href="/wiki/Peru_Time" class="mw-redirect" title="Peru Time">Peru Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9205" class="mw-redirect" title="UTC−05">UTC−05</a></td>
+        </tr>
+        <tr>
+        <td>PETT</td>
+        <td><a href="/wiki/Kamchatka_Time" title="Kamchatka Time">Kamchatka Time</a></td>
+        <td><a href="/wiki/UTC%2B12" class="mw-redirect" title="UTC+12">UTC+12</a></td>
+        </tr>
+        <tr>
+        <td>PGT</td>
+        <td><a href="/wiki/Papua_New_Guinea_Time" class="mw-redirect" title="Papua New Guinea Time">Papua New Guinea Time</a></td>
+        <td><a href="/wiki/UTC%2B10" class="mw-redirect" title="UTC+10">UTC+10</a></td>
+        </tr>
+        <tr>
+        <td>PHOT</td>
+        <td><a href="/wiki/Phoenix_Island_Time" class="mw-redirect" title="Phoenix Island Time">Phoenix Island Time</a></td>
+        <td><a href="/wiki/UTC%2B13" class="mw-redirect" title="UTC+13">UTC+13</a></td>
+        </tr>
+        <tr>
+        <td>PHT</td>
+        <td><a href="/wiki/Philippine_Time" class="mw-redirect" title="Philippine Time">Philippine Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>PKT</td>
+        <td><a href="/wiki/Pakistan_Standard_Time" title="Pakistan Standard Time">Pakistan Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B05" class="mw-redirect" title="UTC+05">UTC+05</a></td>
+        </tr>
+        <tr>
+        <td>PMDT</td>
+        <td><a href="/wiki/Saint_Pierre_and_Miquelon_Daylight_Time" class="mw-redirect" title="Saint Pierre and Miquelon Daylight Time">Saint Pierre and Miquelon Daylight Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9202" class="mw-redirect" title="UTC−02">UTC−02</a></td>
+        </tr>
+        <tr>
+        <td>PMST</td>
+        <td><a href="/wiki/Saint_Pierre_and_Miquelon_Standard_Time" class="mw-redirect" title="Saint Pierre and Miquelon Standard Time">Saint Pierre and Miquelon Standard Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9203" class="mw-redirect" title="UTC−03">UTC−03</a></td>
+        </tr>
+        <tr>
+        <td>PONT</td>
+        <td><a href="/wiki/Pohnpei_Standard_Time" class="mw-redirect" title="Pohnpei Standard Time">Pohnpei Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B11" class="mw-redirect" title="UTC+11">UTC+11</a></td>
+        </tr>
+        <tr>
+        <td>PST</td>
+        <td><a href="/wiki/Pacific_Standard_Time" class="mw-redirect" title="Pacific Standard Time">Pacific Standard Time</a> (North America)</td>
+        <td><a href="/wiki/UTC%E2%88%9208" class="mw-redirect" title="UTC−08">UTC−08</a></td>
+        </tr>
+        <tr>
+        <td>PST</td>
+        <td><a href="/wiki/Philippine_Standard_Time" title="Philippine Standard Time">Philippine Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>PYST</td>
+        <td><a href="/wiki/Paraguay_Summer_Time" class="mw-redirect" title="Paraguay Summer Time">Paraguay Summer Time</a><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[6]</a></sup></td>
+        <td><a href="/wiki/UTC%E2%88%9203" class="mw-redirect" title="UTC−03">UTC−03</a></td>
+        </tr>
+        <tr>
+        <td>PYT</td>
+        <td><a href="/wiki/Paraguay_Time" class="mw-redirect" title="Paraguay Time">Paraguay Time</a><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[7]</a></sup></td>
+        <td><a href="/wiki/UTC%E2%88%9204" class="mw-redirect" title="UTC−04">UTC−04</a></td>
+        </tr>
+        <tr>
+        <td>RET</td>
+        <td><a href="/wiki/R%C3%A9union_Time" class="mw-redirect" title="Réunion Time">Réunion Time</a></td>
+        <td><a href="/wiki/UTC%2B04" class="mw-redirect" title="UTC+04">UTC+04</a></td>
+        </tr>
+        <tr>
+        <td>ROTT</td>
+        <td><a href="/w/index.php?title=Rothera_Research_Station_Time&amp;action=edit&amp;redlink=1" class="new" title="Rothera Research Station Time (page does not exist)">Rothera Research Station Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9203" class="mw-redirect" title="UTC−03">UTC−03</a></td>
+        </tr>
+        <tr>
+        <td>SAKT</td>
+        <td><a href="/wiki/Sakhalin_Island_Time" class="mw-redirect" title="Sakhalin Island Time">Sakhalin Island Time</a></td>
+        <td><a href="/wiki/UTC%2B11" class="mw-redirect" title="UTC+11">UTC+11</a></td>
+        </tr>
+        <tr>
+        <td>SAMT</td>
+        <td><a href="/wiki/Samara_Time" title="Samara Time">Samara Time</a></td>
+        <td><a href="/wiki/UTC%2B04" class="mw-redirect" title="UTC+04">UTC+04</a></td>
+        </tr>
+        <tr>
+        <td>SAST</td>
+        <td><a href="/wiki/South_African_Standard_Time" title="South African Standard Time">South African Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B02" class="mw-redirect" title="UTC+02">UTC+02</a></td>
+        </tr>
+        <tr>
+        <td>SBT</td>
+        <td><a href="/wiki/Solomon_Islands_Time" class="mw-redirect" title="Solomon Islands Time">Solomon Islands Time</a></td>
+        <td><a href="/wiki/UTC%2B11" class="mw-redirect" title="UTC+11">UTC+11</a></td>
+        </tr>
+        <tr>
+        <td>SCT</td>
+        <td><a href="/wiki/Seychelles_Time" title="Seychelles Time">Seychelles Time</a></td>
+        <td><a href="/wiki/UTC%2B04" class="mw-redirect" title="UTC+04">UTC+04</a></td>
+        </tr>
+        <tr>
+        <td>SDT</td>
+        <td><a href="/wiki/Samoa_Daylight_Time" class="mw-redirect" title="Samoa Daylight Time">Samoa Daylight Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9210" class="mw-redirect" title="UTC−10">UTC−10</a></td>
+        </tr>
+        <tr>
+        <td>SGT</td>
+        <td><a href="/wiki/Singapore_Time" class="mw-redirect" title="Singapore Time">Singapore Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>SLST</td>
+        <td><a href="/wiki/Sri_Lanka_Standard_Time" title="Sri Lanka Standard Time">Sri Lanka Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B05:30" title="UTC+05:30">UTC+05:30</a></td>
+        </tr>
+        <tr>
+        <td>SRET</td>
+        <td><a href="/wiki/Srednekolymsk_Time" class="mw-redirect" title="Srednekolymsk Time">Srednekolymsk Time</a></td>
+        <td><a href="/wiki/UTC%2B11" class="mw-redirect" title="UTC+11">UTC+11</a></td>
+        </tr>
+        <tr>
+        <td>SRT</td>
+        <td><a href="/wiki/Suriname_Time" class="mw-redirect" title="Suriname Time">Suriname Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9203" class="mw-redirect" title="UTC−03">UTC−03</a></td>
+        </tr>
+        <tr>
+        <td>SST</td>
+        <td><a href="/wiki/Samoa_Standard_Time" class="mw-redirect" title="Samoa Standard Time">Samoa Standard Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9211" class="mw-redirect" title="UTC−11">UTC−11</a></td>
+        </tr>
+        <tr>
+        <td>SST</td>
+        <td><a href="/wiki/Singapore_Standard_Time" title="Singapore Standard Time">Singapore Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>SYOT</td>
+        <td><a href="/w/index.php?title=Showa_Station_Time&amp;action=edit&amp;redlink=1" class="new" title="Showa Station Time (page does not exist)">Showa Station Time</a></td>
+        <td><a href="/wiki/UTC%2B03" class="mw-redirect" title="UTC+03">UTC+03</a></td>
+        </tr>
+        <tr>
+        <td>TAHT</td>
+        <td><a href="/wiki/Tahiti_Time" class="mw-redirect" title="Tahiti Time">Tahiti Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9210" class="mw-redirect" title="UTC−10">UTC−10</a></td>
+        </tr>
+        <tr>
+        <td>THA</td>
+        <td><a href="/wiki/Thailand_Standard_Time" class="mw-redirect" title="Thailand Standard Time">Thailand Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B07" class="mw-redirect" title="UTC+07">UTC+07</a></td>
+        </tr>
+        <tr>
+        <td>TFT</td>
+        <td><a href="/w/index.php?title=Indian/Kerguelen&amp;action=edit&amp;redlink=1" class="new" title="Indian/Kerguelen (page does not exist)">Indian/Kerguelen</a></td>
+        <td><a href="/wiki/UTC%2B05" class="mw-redirect" title="UTC+05">UTC+05</a></td>
+        </tr>
+        <tr>
+        <td>TJT</td>
+        <td><a href="/wiki/Tajikistan_Time" class="mw-redirect" title="Tajikistan Time">Tajikistan Time</a></td>
+        <td><a href="/wiki/UTC%2B05" class="mw-redirect" title="UTC+05">UTC+05</a></td>
+        </tr>
+        <tr>
+        <td>TKT</td>
+        <td><a href="/wiki/Tokelau_Time" class="mw-redirect" title="Tokelau Time">Tokelau Time</a></td>
+        <td><a href="/wiki/UTC%2B13" class="mw-redirect" title="UTC+13">UTC+13</a></td>
+        </tr>
+        <tr>
+        <td>TLT</td>
+        <td><a href="/wiki/Timor_Leste_Time" class="mw-redirect" title="Timor Leste Time">Timor Leste Time</a></td>
+        <td><a href="/wiki/UTC%2B09" class="mw-redirect" title="UTC+09">UTC+09</a></td>
+        </tr>
+        <tr>
+        <td>TMT</td>
+        <td><a href="/wiki/Turkmenistan_Time" class="mw-redirect" title="Turkmenistan Time">Turkmenistan Time</a></td>
+        <td><a href="/wiki/UTC%2B05" class="mw-redirect" title="UTC+05">UTC+05</a></td>
+        </tr>
+        <tr>
+        <td>TRT</td>
+        <td><a href="/wiki/Time_in_Turkey" title="Time in Turkey">Turkey Time</a></td>
+        <td><a href="/wiki/UTC%2B03" class="mw-redirect" title="UTC+03">UTC+03</a></td>
+        </tr>
+        <tr>
+        <td>TOT</td>
+        <td><a href="/wiki/Tonga_Time" class="mw-redirect" title="Tonga Time">Tonga Time</a></td>
+        <td><a href="/wiki/UTC%2B13" class="mw-redirect" title="UTC+13">UTC+13</a></td>
+        </tr>
+        <tr>
+        <td>TVT</td>
+        <td><a href="/wiki/Tuvalu_Time" class="mw-redirect" title="Tuvalu Time">Tuvalu Time</a></td>
+        <td><a href="/wiki/UTC%2B12" class="mw-redirect" title="UTC+12">UTC+12</a></td>
+        </tr>
+        <tr>
+        <td>ULAST</td>
+        <td><a href="/wiki/Ulaanbaatar_Summer_Time" class="mw-redirect" title="Ulaanbaatar Summer Time">Ulaanbaatar Summer Time</a></td>
+        <td><a href="/wiki/UTC%2B09" class="mw-redirect" title="UTC+09">UTC+09</a></td>
+        </tr>
+        <tr>
+        <td>ULAT</td>
+        <td><a href="/wiki/Ulaanbaatar_Standard_Time" class="mw-redirect" title="Ulaanbaatar Standard Time">Ulaanbaatar Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>USZ1</td>
+        <td><a href="/wiki/Kaliningrad_Time" title="Kaliningrad Time">Kaliningrad Time</a></td>
+        <td><a href="/wiki/UTC%2B02" class="mw-redirect" title="UTC+02">UTC+02</a></td>
+        </tr>
+        <tr>
+        <td>UTC</td>
+        <td><a href="/wiki/Coordinated_Universal_Time" title="Coordinated Universal Time">Coordinated Universal Time</a></td>
+        <td><a href="/wiki/UTC%C2%B100:00" title="UTC±00:00">UTC±00</a></td>
+        </tr>
+        <tr>
+        <td>UYST</td>
+        <td><a href="/wiki/Uruguay_Summer_Time" class="mw-redirect" title="Uruguay Summer Time">Uruguay Summer Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9202" class="mw-redirect" title="UTC−02">UTC−02</a></td>
+        </tr>
+        <tr>
+        <td>UYT</td>
+        <td><a href="/wiki/Uruguay_Standard_Time" class="mw-redirect" title="Uruguay Standard Time">Uruguay Standard Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9203" class="mw-redirect" title="UTC−03">UTC−03</a></td>
+        </tr>
+        <tr>
+        <td>UZT</td>
+        <td><a href="/wiki/Uzbekistan_Time" class="mw-redirect" title="Uzbekistan Time">Uzbekistan Time</a></td>
+        <td><a href="/wiki/UTC%2B05" class="mw-redirect" title="UTC+05">UTC+05</a></td>
+        </tr>
+        <tr>
+        <td>VET</td>
+        <td><a href="/wiki/Venezuelan_Standard_Time" class="mw-redirect" title="Venezuelan Standard Time">Venezuelan Standard Time</a></td>
+        <td><a href="/wiki/UTC%E2%88%9204:00" title="UTC−04:00">UTC−04</a></td>
+        </tr>
+        <tr>
+        <td>VLAT</td>
+        <td><a href="/wiki/Vladivostok_Time" title="Vladivostok Time">Vladivostok Time</a></td>
+        <td><a href="/wiki/UTC%2B10" class="mw-redirect" title="UTC+10">UTC+10</a></td>
+        </tr>
+        <tr>
+        <td>VOLT</td>
+        <td><a href="/wiki/Volgograd_Time" class="mw-redirect" title="Volgograd Time">Volgograd Time</a></td>
+        <td><a href="/wiki/UTC%2B04" class="mw-redirect" title="UTC+04">UTC+04</a></td>
+        </tr>
+        <tr>
+        <td>VOST</td>
+        <td><a href="/w/index.php?title=Vostok_Station_Time&amp;action=edit&amp;redlink=1" class="new" title="Vostok Station Time (page does not exist)">Vostok Station Time</a></td>
+        <td><a href="/wiki/UTC%2B06" class="mw-redirect" title="UTC+06">UTC+06</a></td>
+        </tr>
+        <tr>
+        <td>VUT</td>
+        <td><a href="/wiki/Vanuatu" title="Vanuatu">Vanuatu</a> Time</td>
+        <td><a href="/wiki/UTC%2B11" class="mw-redirect" title="UTC+11">UTC+11</a></td>
+        </tr>
+        <tr>
+        <td>WAKT</td>
+        <td><a href="/wiki/Wake_Island_Time" class="mw-redirect" title="Wake Island Time">Wake Island Time</a></td>
+        <td><a href="/wiki/UTC%2B12" class="mw-redirect" title="UTC+12">UTC+12</a></td>
+        </tr>
+        <tr>
+        <td>WAST</td>
+        <td><a href="/wiki/West_Africa_Summer_Time" class="mw-redirect" title="West Africa Summer Time">West Africa Summer Time</a></td>
+        <td><a href="/wiki/UTC%2B02" class="mw-redirect" title="UTC+02">UTC+02</a></td>
+        </tr>
+        <tr>
+        <td>WAT</td>
+        <td><a href="/wiki/West_Africa_Time" title="West Africa Time">West Africa Time</a></td>
+        <td><a href="/wiki/UTC%2B01" class="mw-redirect" title="UTC+01">UTC+01</a></td>
+        </tr>
+        <tr>
+        <td>WEST</td>
+        <td><a href="/wiki/Western_European_Summer_Time" title="Western European Summer Time">Western European Summer Time</a></td>
+        <td><a href="/wiki/UTC%2B01" class="mw-redirect" title="UTC+01">UTC+01</a></td>
+        </tr>
+        <tr>
+        <td>WET</td>
+        <td><a href="/wiki/Western_European_Time" title="Western European Time">Western European Time</a></td>
+        <td><a href="/wiki/UTC%C2%B100:00" title="UTC±00:00">UTC±00</a></td>
+        </tr>
+        <tr>
+        <td>WIT</td>
+        <td><a href="/wiki/Western_Indonesian_Time" class="mw-redirect" title="Western Indonesian Time">Western Indonesian Time</a></td>
+        <td><a href="/wiki/UTC%2B07" class="mw-redirect" title="UTC+07">UTC+07</a></td>
+        </tr>
+        <tr>
+        <td>WST</td>
+        <td><a href="/wiki/Western_Standard_Time" class="mw-redirect" title="Western Standard Time">Western Standard Time</a></td>
+        <td><a href="/wiki/UTC%2B08" class="mw-redirect" title="UTC+08">UTC+08</a></td>
+        </tr>
+        <tr>
+        <td>YAKT</td>
+        <td><a href="/wiki/Yakutsk_Time" title="Yakutsk Time">Yakutsk Time</a></td>
+        <td><a href="/wiki/UTC%2B09" class="mw-redirect" title="UTC+09">UTC+09</a></td>
+        </tr>
+        <tr>
+        <td>YEKT</td>
+        <td><a href="/wiki/Yekaterinburg_Time" title="Yekaterinburg Time">Yekaterinburg Time</a></td>
+        <td><a href="/wiki/UTC%2B05" class="mw-redirect" title="UTC+05">UTC+05</a></td>
+        </tr>
+        </tbody><tfoot></tfoot></table>
+
+ 
+    </div>
+    <div class="col-3">
+     
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
