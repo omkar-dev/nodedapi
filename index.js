@@ -1064,7 +1064,7 @@ app.get('/notification', (req, res) =>
 var date=req.param('date')
   var time=req.param('time')
   var tz=req.param('tz')
-  var utc=00;
+  var utc="UTC+5:30"
   var type=req.param('type')
 
 
@@ -1087,7 +1087,7 @@ utc=element['UTC offset']
 if(time){
   var send_after = date+", "+time +" "+utc
 }else{
-  var send_after = "April 22 2018, 9:00:00 pm" +utc
+  var send_after = date+", 9:00:00 pm" +utc
 
 }
   //September 24th 2015, 2:00:00 pm UTC-07:00"
@@ -1118,7 +1118,7 @@ var dmessg=message;
 
 
       
-  if(send_after){
+  if(date){
 
     message['send_after']=send_after
     
