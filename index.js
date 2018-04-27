@@ -1051,6 +1051,16 @@ var server = require('http').createServer(app);
 app.use(express.static(__dirname + '/node_modules'));  
 
 
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", '*');
+  res.header("Access-Control-Allow-Credentials", true);
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+  res.header("Access-Control-Allow-Headers", 'Origin,X-Requested-With,Content-Type,Accept,content-type,application/json');
+  next();
+});
+
+
 app.get('/', function(req, res){
   res.sendfile('tabel.html', { root: __dirname  } );
 });
@@ -1359,6 +1369,441 @@ for (var key in recordsets.recordset) {
 
   //ßß sql.close();
 });
+
+
+
+
+
+
+
+
+
+
+
+app.get('/menus', (req, res) =>
+{
+  
+   var sql = require("mssql");
+
+   // config for your database
+   var config = {
+       user: 'other',
+       password: '1nsurance@123',
+       server: '10.100.100.176',
+       database: 'VUE_NFOP_LIVE_13032018'
+   };
+
+   // connect to your database
+   sql.connect(config, function (err) {
+   
+       if (err) console.log(err);
+
+       var userid= req.param('userid');
+
+       // create Request object
+       var request = new sql.Request();
+
+       
+       
+       
+       
+       
+       
+       
+       
+    //  
+
+          
+  
+if(userid){
+
+  request.input('UserID', sql.Int,userid );
+
+}
+ request.execute('[GetUserRoles_NFOPAPP]', function(err, recordsets, returnValue) {
+   
+
+if (err) console.log(err);
+
+//console.log(recordsets)
+var dataobj=[];
+
+
+for (var key in recordsets.recordset) {
+if(recordsets.recordset[key].ParentId==0)
+  {
+    console.log(recordsets.recordset[key].MenuName)
+
+    let data ={}
+
+    data['MenuName']=recordsets.recordset[key].MenuName;
+    data['MenuStaticId']=recordsets.recordset[key].MenuStaticId;
+    data['subs']=[];
+
+    if(recordsets.recordset[key].pagedata=='#'){
+//
+data['subs']=[];
+
+    }else{
+
+
+
+let substring='https://web.velarium.com/'
+
+      if(recordsets.recordset[key].pagedata.includes(substring)){ 
+        data['link']=true;
+   // data['pagedata']= recordsets.recordset[key].pagedata;
+
+    }
+    
+    else{
+      data['link']=false;
+  //data['pagedata']=recordsets.recordset[key].pagedata;
+
+    }
+
+    }
+
+    dataobj.push(data)
+
+  }
+  //"ParentId":0
+
+
+
+
+
+
+
+
+
+
+
+  console.log('\n')
+
+}
+
+
+
+for (var key in recordsets.recordset) {
+
+  for (var i in dataobj) {
+    
+    if(dataobj[i].MenuStaticId==recordsets.recordset[key].ParentId){
+
+
+     // dataobj[i].subs.push(recordsets.recordset[key].MenuName)
+
+     let data ={}
+
+     data['MenuName']=recordsets.recordset[key].MenuName;
+     data['MenuStaticId']=recordsets.recordset[key].MenuStaticId;
+     
+     if(recordsets.recordset[key].pagedata=='#'){
+      //
+      data['subs']=[];
+      
+          }else{ 
+
+     let substring='https://web.velarium.com/'
+     
+           if(recordsets.recordset[key].pagedata.includes(substring)){ 
+             data['link']=true;
+   //    data['pagedata']= recordsets.recordset[key].pagedata;
+     
+         }
+         
+         else{
+           data['link']=false;
+      //     data['pagedata']=recordsets.recordset[key].pagedata;
+     
+         }
+        }
+         
+
+
+
+     dataobj[i].subs.push(data)
+     
+   
+   
+   
+   
+    }
+    
+
+
+
+    
+      
+    }
+    
+
+
+
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+for (var key in recordsets.recordset) {
+
+
+
+  
+    for (var i in dataobj) {
+
+
+
+      for (var k in dataobj[i].subs) {
+        
+        
+
+
+        if(dataobj[i].subs[k].MenuStaticId==recordsets.recordset[key].ParentId)
+        
+          {
+
+
+            let data ={}
+            data['MenuName']=recordsets.recordset[key].MenuName;
+            data['MenuStaticId']=recordsets.recordset[key].MenuStaticId;
+
+            let substring='https://web.velarium.com/'            
+            if(recordsets.recordset[key].pagedata.includes(substring))
+            {
+              data['link']=true;
+          //     data['pagedata']= recordsets.recordset[key].pagedata;
+              }
+              else{
+              data['link']=false;
+        //      data['pagedata']=recordsets.recordset[key].pagedata;
+              }
+
+
+       dataobj[i].subs[k]['subs']=[]
+       dataobj[i].subs[k].subs.push(data)
+              
+        
+        
+        }
+         
+          
+                
+              }
+         
+
+     
+      
+ 
+  
+        
+      }
+ 
+  
+  
+  }
+  
+
+
+
+
+
+
+
+
+
+console.log(dataobj)
+
+
+
+
+res.send(dataobj);
+
+sql.close()
+
+
+          
+             
+    });
+
+
+
+
+
+
+
+   });
+
+});
+
+
+
+
+
+
+
+
+app.get('/login', (req, res) =>
+{
+  
+   var sql = require("mssql");
+
+   // config for your database
+   var config = {
+       user: 'other',
+       password: '1nsurance@123',
+       server: '10.100.100.176',
+       database: 'VUE_NFOP_LIVE_13032018'
+   };
+
+
+   
+    var email= req.param('email');
+    var pass = req.param('password');
+
+
+   // connect to your database
+   sql.connect(config, function (err) {
+   
+       if (err) console.log(err);
+
+       // create Request object
+       var request = new sql.Request();
+
+  
+       request.input('Email', sql.NVarChar(100), email);
+       request.input('Password',  sql.VarChar(200), pass);
+ 
+
+
+ request.execute('[Login_NFOPAPP]', function(err, recordsets, returnValue) {
+   
+  if (err) console.log(err);
+  
+
+if(recordsets.recordset[0].UserId==-1){
+
+  res.send('-1');
+}
+else{
+  res.send(recordsets.recordset);
+}
+
+
+
+console.log(recordsets.recordset)
+
+sql.close()
+
+
+          
+             
+    });
+
+
+
+
+
+
+
+   });
+
+});
+
+
+
+
+
+
+
+
+
+
+app.get('/attorney', (req, res) =>
+{
+  
+   var sql = require("mssql");
+
+   // config for your database
+   var config = {
+       user: 'other',
+       password: '1nsurance@123',
+       server: '10.100.100.176',
+       database: 'VUE_NFOP_LIVE_13032018'
+   };
+
+
+   
+    var state= req.param('state');
+    var city = req.param('city');
+    var pincode = req.param('pincode');
+
+   // connect to your database
+   sql.connect(config, function (err) {
+   
+       if (err) console.log(err);
+
+       // create Request object
+       var request = new sql.Request();
+
+       request.input('State', sql.NVarChar(100), '');
+       request.input('City', sql.NVarChar(100), '');
+       request.input('Zipcode', sql.NVarChar(100), pincode);
+   
+ 
+
+
+ request.execute('[Get_Attorney]', function(err, recordsets, returnValue) {
+   
+  if (err) console.log(err);
+  
+
+  res.send(recordsets);
+
+
+
+
+sql.close()
+
+
+          
+             
+    });
+
+
+
+
+
+
+
+   });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
